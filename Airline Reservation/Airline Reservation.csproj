@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0A7E5F0C-BF2E-4F9E-B7F7-892E459D0F64}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Airline_Reservation</RootNamespace>
+    <AssemblyName>Airline Reservation</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <ExpressionBlendVersion>12.0.41002.1</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Interactions" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="admin.xaml.cs">
+      <DependentUpon>admin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AirlinesDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AirlinesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AirlinesDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AirlinesDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AirlinesDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AirlinesDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AirlinesDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AirlinesDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AirlinesDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AirlinesDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="airlinq.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>airlinq.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="employee.xaml.cs">
+      <DependentUpon>employee.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="flight.xaml.cs">
+      <DependentUpon>flight.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="reportform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportform.Designer.cs">
+      <DependentUpon>reportform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservation.xaml.cs">
+      <DependentUpon>reservation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="reservationaddxaml.xaml.cs">
+      <DependentUpon>reservationaddxaml.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="route.xaml.cs">
+      <DependentUpon>route.xaml</DependentUpon>
+    </Compile>
+    <Page Include="admin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="employee.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="flight.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="home.xaml.cs">
+      <DependentUpon>home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="login.xaml.cs">
+      <DependentUpon>login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="reservation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="reservationaddxaml.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="route.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <EmbeddedResource Include="Report5.rdlc" />
+    <EmbeddedResource Include="reportform.resx">
+      <DependentUpon>reportform.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AirlinesDataSet.xsc">
+      <DependentUpon>AirlinesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AirlinesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AirlinesDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AirlinesDataSet.xss">
+      <DependentUpon>AirlinesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AirlinesDataSet1.xsc">
+      <DependentUpon>AirlinesDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AirlinesDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AirlinesDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AirlinesDataSet1.xss">
+      <DependentUpon>AirlinesDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AirlinesDataSet2.xsc">
+      <DependentUpon>AirlinesDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AirlinesDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AirlinesDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AirlinesDataSet2.xss">
+      <DependentUpon>AirlinesDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AirlinesDataSet3.xsc">
+      <DependentUpon>AirlinesDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AirlinesDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AirlinesDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AirlinesDataSet3.xss">
+      <DependentUpon>AirlinesDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AirlinesDataSet4.xsc">
+      <DependentUpon>AirlinesDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="AirlinesDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AirlinesDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AirlinesDataSet4.xss">
+      <DependentUpon>AirlinesDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="airlinq.dbml.layout">
+      <DependentUpon>airlinq.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="airlinq.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>airlinq.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="air.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon.png" />
+    <Resource Include="images\pass.png" />
+    <Resource Include="images\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\iconair.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\homewall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\reserve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\air1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\flight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\path.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\mainmenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\admin.png" />
+    <Resource Include="images\employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\name.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\date.png" />
+    <Resource Include="images\flite.png" />
+    <Resource Include="images\passenger.png" />
+    <Resource Include="images\Route.png" />
+    <Resource Include="images\seats.png" />
+    <Resource Include="images\total.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\mob.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\add.png" />
+    <Resource Include="images\delete.png" />
+    <Resource Include="images\search.png" />
+    <Resource Include="images\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\land.png" />
+    <Resource Include="images\off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\typ.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\ca.png" />
+    <Resource Include="images\no.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\place.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\emp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\usser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="splashing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\re.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

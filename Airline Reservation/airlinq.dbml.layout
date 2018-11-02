@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.25" name="airlinq">
+  <DataContextMoniker Name="/airlinqDataContext" />
+  <nestedChildShapes>
+    <classShape Id="adbf5c18-1517-449e-8042-fce3195795f9" absoluteBounds="0.5, 0.875, 2, 1.9631982421875">
+      <DataClassMoniker Name="/airlinqDataContext/admindb" />
+      <nestedChildShapes>
+        <elementListCompartment Id="39e15b6a-a15c-4929-9679-94df5429d6ef" absoluteBounds="0.515, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="04816ecb-1dc9-4ece-8c43-d79658929d52" absoluteBounds="3.25, 1, 2, 3.1170068359375">
+      <DataClassMoniker Name="/airlinqDataContext/employeedb" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aa945312-8899-4a51-9945-92b0f41e368c" absoluteBounds="3.265, 1.46, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="066e772b-7eaa-4fb7-85c2-afeb36b9f91d" absoluteBounds="1.125, 3.625, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/airlinqDataContext/flightdb" />
+      <nestedChildShapes>
+        <elementListCompartment Id="493c5e81-f566-40c6-b347-5a0de8ff866c" absoluteBounds="1.1400000000000001, 4.085, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c0ae9c28-621c-4e79-9944-ee0f96722f5d" absoluteBounds="4.25, 4.625, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/airlinqDataContext/reservationdb" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7bfa32e5-8bf7-4e14-a7b1-25c7852a96a9" absoluteBounds="4.265, 5.085, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="231031d5-7178-4c92-97a3-323eaef82298" absoluteBounds="1.375, 6.625, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/airlinqDataContext/routesdb" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c1c4ed8c-9db4-4842-85d7-e31654b181c1" absoluteBounds="1.3900000000000001, 7.0850000000000009, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

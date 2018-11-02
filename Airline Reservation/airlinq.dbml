@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Airlines" Class="airlinqDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=AWAIS;Initial Catalog=Airlines;Integrated Security=True" SettingsObjectName="Airline_Reservation.Properties.Settings" SettingsPropertyName="AirlinesConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.admindb" Member="admindbs">
+    <Type Name="admindb">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="mobile" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="nic" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pass" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="cpass" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.employeedb" Member="employeedbs">
+    <Type Name="employeedb">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="first" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="last" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="nationality" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="joining" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="mobile" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="address" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="department" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="position" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="field" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.flightdb" Member="flightdbs">
+    <Type Name="flightdb">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="type" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="model" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="seats" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="cabins" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="takoff" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="landing" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.reservationdb" Member="reservationdbs">
+    <Type Name="reservationdb">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="mobile" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="passengers" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="flight" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="route" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="seats" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="payment" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.routesdb" Member="routesdbs">
+    <Type Name="routesdb">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="type" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="model" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="startdest" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="enddest" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="takeoff" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="landing" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

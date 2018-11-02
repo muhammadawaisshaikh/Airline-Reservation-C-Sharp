@@ -1,0 +1,99 @@
+﻿<Page x:Class="Airline_Reservation.flight"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="1050"
+	Title="flight">
+
+    <Grid Background="#FF237A6A">
+        <GridSplitter HorizontalAlignment="Left" Height="264" Margin="542,178,0,0" VerticalAlignment="Top" Width="2" BorderBrush="Black" Background="#FF185B4F"/>
+        <Button x:Name="backbutton1" Content="Main Menu" HorizontalAlignment="Left" Margin="78,32,0,0" VerticalAlignment="Top" Width="126" Height="43" Background="#FF237A6A" BorderBrush="#FF185B4F" FontFamily="Century Gothic" FontSize="20" FontWeight="Bold" BorderThickness="2" Click="backbutton1_Click"/>
+        <Button x:Name="flightnew" Content="New" HorizontalAlignment="Left" Margin="342,32,0,0" VerticalAlignment="Top" Width="112" Height="43" Background="#FF237A6A" BorderBrush="#FF185B4F" FontFamily="Century Gothic" FontSize="20" FontWeight="Bold" BorderThickness="2" Click="flightnew_Click"/>
+        <Button x:Name="flightmod" Content="Modify" HorizontalAlignment="Left" Margin="708,32,0,0" VerticalAlignment="Top" Width="112" Height="43" Background="#FF237A6A" BorderBrush="#FF185B4F" FontFamily="Century Gothic" FontSize="20" FontWeight="Bold" BorderThickness="2" Click="flightmod_Click"/>
+        <Button x:Name="flightbin" Content="Bin" HorizontalAlignment="Left" Margin="880,32,0,0" VerticalAlignment="Top" Width="112" Height="43" Background="#FF237A6A" BorderBrush="#FF185B4F" FontFamily="Century Gothic" FontSize="20" FontWeight="Bold" BorderThickness="2" Click="flightbin_Click"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="36,40,0,0" VerticalAlignment="Top" Width="34" Height="29">
+            <Label.Background>
+                <ImageBrush ImageSource="images/back.png"/>
+            </Label.Background>
+        </Label>
+        <Button x:Name="flightsearch" Content="Search" HorizontalAlignment="Left" Margin="528,32,0,0" VerticalAlignment="Top" Width="112" Height="43" Background="#FF237A6A" BorderBrush="#FF185B4F" FontFamily="Century Gothic" FontSize="20" FontWeight="Bold" BorderThickness="2" Click="flightsearch_Click"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="301,40,0,0" VerticalAlignment="Top" Height="26" Width="28">
+            <Label.Background>
+                <ImageBrush ImageSource="images/add.png"/>
+            </Label.Background>
+        </Label>
+        <Label Content="" HorizontalAlignment="Left" Margin="487,40,0,0" VerticalAlignment="Top" Height="26" Width="28">
+            <Label.Background>
+                <ImageBrush ImageSource="images/search.png"/>
+            </Label.Background>
+        </Label>
+        <Label Content="" HorizontalAlignment="Left" Margin="667,40,0,0" VerticalAlignment="Top" Height="26" Width="28">
+            <Label.Background>
+                <ImageBrush ImageSource="images/update.png"/>
+            </Label.Background>
+        </Label>
+        <Label Content="" HorizontalAlignment="Left" Margin="839,40,0,0" VerticalAlignment="Top" Height="26" Width="28">
+            <Label.Background>
+                <ImageBrush ImageSource="images/delete.png"/>
+            </Label.Background>
+        </Label>
+        <Label Content="Seats #" HorizontalAlignment="Left" Margin="631,216,0,0" VerticalAlignment="Top" Height="32" Width="126" FontFamily="Century Gothic" FontSize="18"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="585,216,0,0" VerticalAlignment="Top" Height="26" Width="28">
+            <Label.Background>
+                <ImageBrush ImageSource="images/seats.png"/>
+            </Label.Background>
+        </Label>
+        <TextBox x:Name="seatt" HorizontalAlignment="Left" Height="32" Margin="781,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Background="#FF237A6A" FontFamily="Century Gothic" FontSize="18" BorderThickness="2" BorderBrush="#FF185B4F" TextChanged="seatt_TextChanged"/>
+        <Label Content="Cabins #" HorizontalAlignment="Left" Margin="631,269,0,0" VerticalAlignment="Top" Height="32" Width="126" FontFamily="Century Gothic" FontSize="18"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="585,269,0,0" VerticalAlignment="Top" Height="26" Width="28">
+            <Label.Background>
+                <ImageBrush ImageSource="images/ca.png"/>
+            </Label.Background>
+        </Label>
+        <TextBox x:Name="cabint" HorizontalAlignment="Left" Height="32" Margin="781,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Background="#FF237A6A" FontFamily="Century Gothic" FontSize="18" BorderThickness="2" BorderBrush="#FF185B4F" TextChanged="cabint_TextChanged"/>
+        <Label Content="Take Off" HorizontalAlignment="Left" Margin="631,319,0,0" VerticalAlignment="Top" Height="32" Width="126" FontFamily="Century Gothic" FontSize="18"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="585,319,0,0" VerticalAlignment="Top" Height="26" Width="28">
+            <Label.Background>
+                <ImageBrush ImageSource="images/off.png"/>
+            </Label.Background>
+        </Label>
+        <TextBox x:Name="takeofft" HorizontalAlignment="Left" Height="32" Margin="781,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Background="#FF237A6A" FontFamily="Century Gothic" FontSize="18" BorderThickness="2" BorderBrush="#FF185B4F"/>
+        <Label Content="Landing" HorizontalAlignment="Left" Margin="631,369,0,0" VerticalAlignment="Top" Height="32" Width="126" FontFamily="Century Gothic" FontSize="18"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="585,369,0,0" VerticalAlignment="Top" Height="26" Width="28">
+            <Label.Background>
+                <ImageBrush ImageSource="images/land.png"/>
+            </Label.Background>
+        </Label>
+        <TextBox x:Name="landingt" HorizontalAlignment="Left" Height="32" Margin="781,369,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Background="#FF237A6A" FontFamily="Century Gothic" FontSize="18" BorderThickness="2" BorderBrush="#FF185B4F"/>
+        <Button x:Name="flightsaveb" Content="Save" HorizontalAlignment="Left" Margin="487,532,0,0" VerticalAlignment="Top" Width="112" Height="43" Background="#FF237A6A" BorderBrush="#FF185B4F" FontFamily="Century Gothic" FontSize="20" FontWeight="Bold" BorderThickness="2" Click="flightsaveb_Click"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="446,537,0,0" VerticalAlignment="Top" Height="26" Width="28">
+            <Label.Background>
+                <ImageBrush ImageSource="images/save.png"/>
+            </Label.Background>
+        </Label>
+        <Label Content="Flight Name" HorizontalAlignment="Left" Margin="151,214,0,0" VerticalAlignment="Top" Height="34" Width="126" FontFamily="Century Gothic" FontSize="18"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="105,216,0,0" VerticalAlignment="Top" Height="26" Width="28">
+            <Label.Background>
+                <ImageBrush ImageSource="images/flight.png"/>
+            </Label.Background>
+        </Label>
+        <Label Content="Type" HorizontalAlignment="Left" Margin="151,268,0,0" VerticalAlignment="Top" Height="34" Width="126" FontFamily="Century Gothic" FontSize="18"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="105,270,0,0" VerticalAlignment="Top" Height="26" Width="28">
+            <Label.Background>
+                <ImageBrush ImageSource="images/typ.gif"/>
+            </Label.Background>
+        </Label>
+        <TextBox x:Name="typet" HorizontalAlignment="Left" Height="32" Margin="301,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Background="#FF237A6A" FontFamily="Century Gothic" FontSize="18" BorderThickness="2" BorderBrush="#FF185B4F"/>
+        <Label Content="Model" HorizontalAlignment="Left" Margin="151,318,0,0" VerticalAlignment="Top" Height="34" Width="145" FontFamily="Century Gothic" FontSize="18"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="105,320,0,0" VerticalAlignment="Top" Height="26" Width="28">
+            <Label.Background>
+                <ImageBrush ImageSource="images/air1.png"/>
+            </Label.Background>
+        </Label>
+        <TextBox x:Name="modelt" HorizontalAlignment="Left" Height="32" Margin="301,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Background="#FF237A6A" FontFamily="Century Gothic" FontSize="18" BorderThickness="2" BorderBrush="#FF185B4F" TextChanged="modelt_TextChanged"/>
+        <TextBox x:Name="namet" HorizontalAlignment="Left" Height="32" Margin="301,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Background="#FF237A6A" FontFamily="Century Gothic" FontSize="18" BorderThickness="2" BorderBrush="#FF185B4F"/>
+
+    </Grid>
+</Page>
